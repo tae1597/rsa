@@ -56,7 +56,7 @@ public class RSALogging {
         BigInteger prime;
         do {
             prime = new BigInteger(bitLength, random);
-        } while (!prime.isProbablePrime(100));  // Verifica che sia un numero primo con probabilità elevata
+        } while (!prime.isProbablePrime(100));  
         return prime;
     }
 
